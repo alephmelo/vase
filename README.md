@@ -17,7 +17,8 @@ Docs can be found at [https://hexdocs.pm/vase](https://hexdocs.pm/vase).
 
 ## Development
 ```bash
-$ git@github.com:alephmelo/vase.git
+$ git clone git@github.com:alephmelo/vase.git
+$ cd vase
 ```
 
 ```bash
