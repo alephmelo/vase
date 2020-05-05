@@ -1,8 +1,8 @@
-defmodule DecanterTest do
+defmodule VaseTest do
   use ExUnit.Case
-  doctest Decanter
+  doctest Vase
 
   test "greets the world" do
-    assert Decanter.hello() == :world
+    assert Vase.hello() == :world
   end
 end

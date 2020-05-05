@@ -1,6 +1,6 @@
-defmodule Decanter do
+defmodule Vase do
   @moduledoc """
-  Documentation for `Decanter`.
+  Documentation for `Vase`.
   """
 
   @doc """
@@ -8,7 +8,7 @@ defmodule Decanter do
 
   ## Examples
 
-      iex> Decanter.hello()
+      iex> Vase.hello()
       :world
 
   """
