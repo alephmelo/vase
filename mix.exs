@@ -9,7 +9,7 @@ defmodule Vase.MixProject do
       start_permanent: Mix.env() == :prod,
       description: description(),
       deps: deps(),
-      package: package(),
+      package: package()
     ]
   end
 

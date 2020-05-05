@@ -9,5 +9,4 @@ defmodule Vase.Shortcuts do
     conn
     |> send_resp(200, output)
   end
-
 end

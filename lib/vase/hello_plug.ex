@@ -4,6 +4,6 @@ defmodule Vase.HelloPlug do
   def init(options), do: options
 
   def call(conn, _opts) do
-    render(conn, "foo.eex", [name: "Pessoa"])
+    render(conn, "foo.eex", name: "Pessoa")
   end
 end
