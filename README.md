@@ -28,4 +28,4 @@ $ mix deps.get
 ```bash
 $ mix run --no-halt
 ```
-This will run the server with hotreload on and you can access at [http://localhost:8080](http://localhost:8080).
+This will run the server with hotreload on and you can access it at [http://localhost:8080](http://localhost:8080).
