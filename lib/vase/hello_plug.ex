@@ -1,13 +1,9 @@
 defmodule Vase.HelloPlug do
-  import Plug.Conn
+  import Vase.Shortcuts
 
   def init(options), do: options
 
   def call(conn, _opts) do
-    rendered = File.read!("templates/foo.eex")
-    |> EEx.eval_string([name: "Pessoa"])
-
-    conn
-    |> send_resp(200, rendered)
+    render(conn, "foo.eex", [name: "Pessoa"])
   end
 end
