@@ -1,6 +1,6 @@
 defmodule Vase.MixProject do
   use Mix.Project
-
+break on purpose to check CI
   def project do
     [
       app: :vase,
