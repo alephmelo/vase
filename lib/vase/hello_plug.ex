@@ -5,7 +5,7 @@ defmodule Vase.HelloPlug do
 
   def call(conn, _opts) do
     rendered = File.read!("templates/foo.eex")
-    |> EEx.eval_string([name: "Aleph"])
+    |> EEx.eval_string([name: "Pessoa"])
 
     conn
     |> send_resp(200, rendered)
