@@ -4,9 +4,15 @@ defmodule Vase.Shortcuts do
   @default_template_path "templates"
 
   def render(conn, template_name, context \\ []) do
-    output = EEx.eval_file("#{@default_template_path}/#{template_name}", context)
+    output = render_template(template_name, context)
 
     conn
     |> send_resp(200, output)
+
+    {:ok, output}
+  end
+
+  defp render_template(template_name, context) do
+    EEx.eval_file("#{@default_template_path}/#{template_name}", context)
   end
 end
