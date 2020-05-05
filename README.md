@@ -3,6 +3,7 @@
 ![Elixir CI](https://github.com/alephmelo/vase/workflows/Elixir%20CI/badge.svg)
 
 **TODO: Add description**
+Test PR CI.
 
 ## Installation
 
