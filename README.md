@@ -4,8 +4,7 @@
 
 ## Installation
 
-If [available in Hex](https://hex.pm/docs/publish), the package can be installed
-by adding `vase` to your list of dependencies in `mix.exs`:
+The package can be installed by adding `vase` to your list of dependencies in `mix.exs`:
 
 ```elixir
 def deps do
@@ -14,8 +13,18 @@ def deps do
   ]
 end
 ```
+Docs can be found at [https://hexdocs.pm/vase](https://hexdocs.pm/vase).
 
-Documentation can be generated with [ExDoc](https://github.com/elixir-lang/ex_doc)
-and published on [HexDocs](https://hexdocs.pm). Once published, the docs can
-be found at [https://hexdocs.pm/vase](https://hexdocs.pm/vase).
+## Development
+```bash
+$ git@github.com:alephmelo/vase.git
+```
 
+```bash
+$ mix deps.get
+```
+
+```bash
+$ mix run --no-halt
+```
+This will run the server with hotreload on.

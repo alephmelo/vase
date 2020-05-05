@@ -8,7 +8,6 @@ defmodule Vase.HelloPlug do
     |> EEx.eval_string([name: "Aleph"])
 
     conn
-    |> IO.inspect
     |> send_resp(200, rendered)
   end
 end
