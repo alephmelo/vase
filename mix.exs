@@ -28,6 +28,7 @@ defmodule Vase.MixProject do
   # Run "mix help deps" to learn about dependencies.
   defp deps do
     [
+      {:decorator, "~> 1.2"},
       {:plug_cowboy, "~> 2.0"},
       {:ex_doc, "~> 0.14", only: :dev, runtime: false},
       {:lettuce, "~> 0.1.5"}

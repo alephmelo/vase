@@ -1,9 +1,9 @@
 defmodule Vase.HelloPlug do
   import Vase.Shortcuts
 
-  def init(options), do: options
+  use Vase.Router
 
-  def call(conn, _opts) do
+  get "/" do
     render(conn, "foo.eex", name: "Pessoa")
   end
 end
