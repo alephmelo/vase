@@ -8,8 +8,6 @@ defmodule Vase.Shortcuts do
 
     conn
     |> send_resp(200, output)
-
-    {:ok, output}
   end
 
   defp render_template(template_name, context) do
