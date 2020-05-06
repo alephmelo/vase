@@ -25,7 +25,7 @@ jobs:
     - name: Compile Test Results
       run: MIX_ENV=test mix do compile --warnings-as-errors, coveralls.json
     - name: Publish Results
-      shell:
+      shell: bash
       env:
         CODECOV_TOKEN: ${{ secrets.CODECOV_TOKEN }}
       run: bash <(curl -s https://codecov.io/bash)
