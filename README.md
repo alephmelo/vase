@@ -1,6 +1,6 @@
 # Vase
 
-![Elixir CI](https://github.com/alephmelo/vase/workflows/Elixir%20CI/badge.svg)
+![Elixir CI](https://github.com/alephmelo/vase/workflows/Elixir%20CI/badge.svg) [![codecov](https://codecov.io/gh/alephmelo/vase/branch/master/graph/badge.svg)](https://codecov.io/gh/alephmelo/vase)
 
 **TODO: Add description**
 
