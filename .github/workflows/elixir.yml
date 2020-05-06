@@ -22,3 +22,7 @@ jobs:
       run: mix deps.get
     - name: Run Tests
       run: mix test
+    - name: Compile Test Results
+      run: MIX_ENV=test mix do compile --warnings-as-errors, coveralls.json
+    - name: Publish Results
+      run: bash <(curl -s https://codecov.io/bash)
