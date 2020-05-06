@@ -37,7 +37,7 @@ defmodule Vase.MixProject do
       {:decorator, "~> 1.2"},
       {:plug_cowboy, "~> 2.0"},
       {:ex_doc, "~> 0.14", only: :dev, runtime: false},
-      {:excoveralls, "~> 0.5.7", only: :test},
+      {:excoveralls, "~> 0.12.3", only: :test},
       {:lettuce, "~> 0.1.5"}
       # {:dep_from_hexpm, "~> 0.3.0"},
       # {:dep_from_git, git: "https://github.com/elixir-lang/my_dep.git", tag: "0.1.0"}
