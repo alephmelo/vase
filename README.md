@@ -17,6 +17,19 @@ end
 ```
 Docs can be found at [https://hexdocs.pm/vase](https://hexdocs.pm/vase).
 
+## Quick Start
+```elixir
+defmodule Vase.HelloWorld do
+  import Vase.Shortcuts
+
+  use Vase.Router
+
+  get "/" do
+    render(conn, "foo.eex", name: "Vase")
+  end
+end
+```
+
 ## Development
 ```bash
 $ git clone git@github.com:alephmelo/vase.git
