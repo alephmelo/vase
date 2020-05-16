@@ -9,6 +9,7 @@ defmodule Vase.ShortcutsTest do
       :get
       |> conn("/", "")
 
-    assert Vase.Shortcuts.render(conn, "foo.eex", name: "Pessoa").resp_body == "<h1>Hi, Pessoa</h1>\n"
+    assert Vase.Shortcuts.render(conn, "foo.eex", name: "Pessoa").resp_body ==
+             "<h1>Hi, Pessoa</h1>\n"
   end
 end

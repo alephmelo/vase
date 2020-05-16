@@ -13,9 +13,9 @@ defmodule Vase.MixProject do
       preferred_cli_env: [
         coveralls: :test,
         "coveralls.html": :test,
-        "coveralls.json": :test,
+        "coveralls.json": :test
       ],
-      test_coverage: [tool: ExCoveralls],
+      test_coverage: [tool: ExCoveralls]
     ]
   end
 
@@ -35,6 +35,7 @@ defmodule Vase.MixProject do
   defp deps do
     [
       {:decorator, "~> 1.2"},
+      {:poison, "~> 3.0"},
       {:plug_cowboy, "~> 2.0"},
       {:ex_doc, "~> 0.14", only: :dev, runtime: false},
       {:excoveralls, "~> 0.12.3", only: :test},
