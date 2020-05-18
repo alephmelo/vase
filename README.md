@@ -27,6 +27,15 @@ defmodule Vase.HelloWorld do
   get "/" do
     render(conn, "foo.eex", name: "Vase")
   end
+
+  get "/users" do
+    users = [
+      %{id: 1, name: "João Silverino"},
+      %{id: 2, name: "Felipe Esmite"}
+    ]
+
+    jsonify(conn, users)
+  end
 end
 ```
 

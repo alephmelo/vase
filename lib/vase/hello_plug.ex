@@ -6,4 +6,13 @@ defmodule Vase.HelloPlug do
   get "/" do
     render(conn, "foo.eex", name: "Pessoa")
   end
+
+  get "/users" do
+    users = [
+      %{id: 1, name: "João Silverino"},
+      %{id: 2, name: "Felipe Esmite"}
+    ]
+
+    jsonify(conn, users)
+  end
 end
